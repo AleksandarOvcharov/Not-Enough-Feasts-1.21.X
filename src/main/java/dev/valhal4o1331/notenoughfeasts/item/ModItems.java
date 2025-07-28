@@ -4,11 +4,15 @@ import dev.valhal4o1331.notenoughfeasts.NotEnoughFeasts;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item APPLE_PIE = registerItem("apple_pie", new Item(new Item.Settings().food(ModFoodComponents.APPLE_PIE)));
+    public static final Item APPLE_PIE = registerItem("apple_pie", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NotEnoughFeasts.MOD_ID,  "apple_pie")))
+            .food(ModFoodComponents.APPLE_PIE)));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NotEnoughFeasts.MOD_ID, name), item);
