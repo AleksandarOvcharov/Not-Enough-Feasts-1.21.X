@@ -18,9 +18,5 @@ public class ModItems {
 
     public static void registerModItems() {
         NotEnoughFeasts.LOGGER.info("[NotEnoughFeasts] Registering Mod Items...");
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(APPLE_PIE);
-        });
     }
 }
