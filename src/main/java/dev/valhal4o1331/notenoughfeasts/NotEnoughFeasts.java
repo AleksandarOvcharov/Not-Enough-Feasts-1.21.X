@@ -4,8 +4,8 @@ import dev.valhal4o1331.notenoughfeasts.block.ModBlocks;
 import dev.valhal4o1331.notenoughfeasts.item.ModFoodComponents;
 import dev.valhal4o1331.notenoughfeasts.item.ModItemGroups;
 import dev.valhal4o1331.notenoughfeasts.item.ModItems;
+import dev.valhal4o1331.notenoughfeasts.util.items.ModItemsComposting;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,8 +20,7 @@ public class NotEnoughFeasts implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModFoodComponents.registerModFoodComponents();
-		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION, 0.5f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION_SEEDS, 0.25f);
+        ModItemsComposting.registerCompostItems();
 		LOGGER.info("[NotEnoughFeasts] Mod Initialized!");
 	}
 }

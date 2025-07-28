@@ -2,6 +2,7 @@ package dev.valhal4o1331.notenoughfeasts.item;
 
 import dev.valhal4o1331.notenoughfeasts.NotEnoughFeasts;
 import dev.valhal4o1331.notenoughfeasts.block.ModBlocks;
+import dev.valhal4o1331.notenoughfeasts.util.items.ModSeedItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
