@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "notenoughfeasts",
+	"version": "${version}",
+	"name": "Not Enough Feasts",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/notenoughfeasts/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.valhal4o1331.notenoughfeasts.NotEnoughFeasts"
+		],
+		"fabric-datagen": [
+			"dev.valhal4o1331.notenoughfeasts.NotEnoughFeastsDataGenerator"
+		],
+		"client": [
+			"dev.valhal4o1331.notenoughfeasts.NotEnoughFeastsClient"
+		]
+	},
+	"mixins": [
+		"notenoughfeasts.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
