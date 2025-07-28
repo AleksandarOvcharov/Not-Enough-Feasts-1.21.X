@@ -1,5 +1,6 @@
 package dev.valhal4o1331.notenoughfeasts;
 
+import dev.valhal4o1331.notenoughfeasts.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +12,8 @@ public class NotEnoughFeasts implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("[NotEnoughFeasts] Mod Initializing...");
+		ModItems.registerModItems();
+		LOGGER.info("[NotEnoughFeasts] Mod Initialized!");
 	}
 }
