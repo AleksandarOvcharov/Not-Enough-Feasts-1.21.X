@@ -1,5 +1,9 @@
 {
   "item.notenoughfeasts.apple_pie": "Apple Pie",
+  "item.notenoughfeasts.onion": "Onion",
+  "item.notenoughfeasts.onion_seeds": "Onion Seeds",
 
-  "itemgroup.notenoughfeasts.not_enough_feasts_foods": "Not Enough Feasts Foods"
+  "block.notenoughfeasts.onion_crop": "Onion Crop",
+
+  "itemgroup.notenoughfeasts.not_enough_feasts_items": "Not Enough Feasts Items"
 }

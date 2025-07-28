@@ -12,12 +12,14 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup NOT_ENOUGH_FEASTS_FOODS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(NotEnoughFeasts.MOD_ID, "not_enough_feasts_foods"),
+    public static final ItemGroup NOT_ENOUGH_FEASTS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(NotEnoughFeasts.MOD_ID, "not_enough_feasts_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.APPLE_PIE))
-                    .displayName(Text.translatable("itemgroup.notenoughfeasts.not_enough_feasts_foods"))
+                    .displayName(Text.translatable("itemgroup.notenoughfeasts.not_enough_feasts_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.APPLE_PIE);
+                        entries.add(ModItems.ONION);
+                        entries.add(ModItems.ONION_SEEDS);
                     }).build());
 
     public static void registerItemGroups() {
