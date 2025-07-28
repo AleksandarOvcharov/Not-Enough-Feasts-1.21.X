@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item APPLE_PIE = registerItem("apple_pie", new Item(new Item.Settings()));
+    public static final Item APPLE_PIE = registerItem("apple_pie", new Item(new Item.Settings().food(ModFoodComponents.APPLE_PIE)));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NotEnoughFeasts.MOD_ID, name), item);
