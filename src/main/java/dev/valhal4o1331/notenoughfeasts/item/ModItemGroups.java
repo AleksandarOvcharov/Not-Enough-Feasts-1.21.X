@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.APPLE_PIE);
                         entries.add(ModItems.ONION);
                         entries.add(ModItems.ONION_SEEDS);
+                        entries.add(ModItems.ONION_ROOT);
                     }).build());
 
     public static void registerItemGroups() {

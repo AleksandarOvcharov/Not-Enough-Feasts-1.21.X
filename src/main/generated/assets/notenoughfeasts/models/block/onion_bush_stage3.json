@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "notenoughfeasts:block/onion_bush_stage3"
+  }
+}

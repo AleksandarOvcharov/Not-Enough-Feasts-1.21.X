@@ -1,6 +1,7 @@
 package dev.valhal4o1331.notenoughfeasts.datagen;
 
 import dev.valhal4o1331.notenoughfeasts.block.ModBlocks;
+import dev.valhal4o1331.notenoughfeasts.block.custom.OnionBushBlock;
 import dev.valhal4o1331.notenoughfeasts.block.custom.OnionCropBlock;
 import dev.valhal4o1331.notenoughfeasts.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -17,6 +18,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerCrop(ModBlocks.ONION_CROP, OnionCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.ONION_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                OnionBushBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override

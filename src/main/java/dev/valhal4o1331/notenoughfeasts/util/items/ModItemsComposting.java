@@ -9,6 +9,7 @@ public class ModItemsComposting {
     public static void initCompostItems() {
         CompostingChanceRegistry.INSTANCE.add(ModItems.ONION, 0.5f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.ONION_SEEDS, 0.25f);
+        CompostingChanceRegistry.INSTANCE.add(ModItems.ONION_ROOT, 0.15f);
     }
 
     public static void registerCompostItems() {

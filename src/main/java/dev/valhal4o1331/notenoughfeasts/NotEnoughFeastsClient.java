@@ -9,5 +9,6 @@ public class NotEnoughFeastsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ONION_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ONION_BUSH, RenderLayer.getCutout());
     }
 }

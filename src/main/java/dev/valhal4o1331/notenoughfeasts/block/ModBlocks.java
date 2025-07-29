@@ -1,9 +1,11 @@
 package dev.valhal4o1331.notenoughfeasts.block;
 
 import dev.valhal4o1331.notenoughfeasts.NotEnoughFeasts;
+import dev.valhal4o1331.notenoughfeasts.block.custom.OnionBushBlock;
 import dev.valhal4o1331.notenoughfeasts.block.custom.OnionCropBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -23,6 +25,10 @@ public class ModBlocks {
                     .noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block ONION_BUSH = registerBlockWithoutBlockItem("onion_bush",
+            new OnionBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH).registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(NotEnoughFeasts.MOD_ID, "onion_crop")))));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(NotEnoughFeasts.MOD_ID, name), block);

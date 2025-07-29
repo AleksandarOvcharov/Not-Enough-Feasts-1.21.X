@@ -2,7 +2,7 @@ package dev.valhal4o1331.notenoughfeasts.item;
 
 import dev.valhal4o1331.notenoughfeasts.NotEnoughFeasts;
 import dev.valhal4o1331.notenoughfeasts.block.ModBlocks;
-import dev.valhal4o1331.notenoughfeasts.util.items.ModSeedItem;
+import dev.valhal4o1331.notenoughfeasts.util.items.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -23,9 +23,15 @@ public class ModItems {
             .food(ModFoodComponents.ONION)));
 
     public static final Item ONION_SEEDS = registerItem("onion_seeds",
-            new ModSeedItem(ModBlocks.ONION_CROP, new Item.Settings()
+            new AliasedBlockItem(ModBlocks.ONION_CROP, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NotEnoughFeasts.MOD_ID,
                             "onion_seeds")))));
+
+    public static final Item ONION_ROOT = registerItem("onion_root",
+            new AliasedBlockItem(ModBlocks.ONION_BUSH, new Item.Settings().food(
+                    ModFoodComponents.ONION_ROOT, ModFoodComponents.ONION_ROOT_EFFECT)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NotEnoughFeasts.MOD_ID,
+                    "onion_root")))));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NotEnoughFeasts.MOD_ID, name), item);
