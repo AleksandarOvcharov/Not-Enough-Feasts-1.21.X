@@ -4,6 +4,7 @@ import dev.valhal4o1331.notenoughfeasts.block.ModBlocks;
 import dev.valhal4o1331.notenoughfeasts.item.ModFoodComponents;
 import dev.valhal4o1331.notenoughfeasts.item.ModItemGroups;
 import dev.valhal4o1331.notenoughfeasts.item.ModItems;
+import dev.valhal4o1331.notenoughfeasts.util.LangWriter;
 import dev.valhal4o1331.notenoughfeasts.util.items.ModItemsComposting;
 import dev.valhal4o1331.notenoughfeasts.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -17,6 +18,7 @@ public class NotEnoughFeasts implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("[NotEnoughFeasts] Mod Initializing...");
+		LangWriter.registerLangJSONKeys();
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

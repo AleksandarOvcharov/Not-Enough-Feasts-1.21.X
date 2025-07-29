@@ -1,0 +1,9 @@
+{
+  "item.notenoughfeasts.onion" : "Лук",
+  "block.notenoughfeasts.onion_bush" : "Луков храст",
+  "itemgroup.notenoughfeasts.not_enough_feasts_items" : "Not Enough Feasts Предмети",
+  "item.notenoughfeasts.apple_pie" : "Ябълков пай",
+  "block.notenoughfeasts.onion_crop" : "Луково растение",
+  "item.notenoughfeasts.onion_seeds" : "Лукови семена",
+  "item.notenoughfeasts.onion_root" : "Луков корен"
+}
