@@ -4,7 +4,7 @@ import dev.valhal4o1331.notenoughfeasts.NotEnoughFeasts;
 
 public class ModWorldGeneration {
     public static void generateModWorldGen() {
-
+        ModBushGeneration.generateBushes();
     }
 
     public static void registerModWorldGen() {
