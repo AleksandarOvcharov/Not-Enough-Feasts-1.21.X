@@ -31,6 +31,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion("has_egg", conditionsFromItem(Items.EGG))
                         .offerTo(exporter);
 
+                createShapeless(RecipeCategory.MISC, ModItems.ONION_SEEDS, 1)
+                        .input(ModItems.ONION)
+                        .criterion("has_onion", conditionsFromItem(ModItems.ONION))
+                        .offerTo(exporter);
+
             }
         };
     }
