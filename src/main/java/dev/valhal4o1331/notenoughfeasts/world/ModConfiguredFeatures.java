@@ -28,7 +28,7 @@ public class ModConfiguredFeatures {
 
     private static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(NotEnoughFeasts.MOD_ID, name));
-    };
+    }
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?,?>> context,
                                                                                    RegistryKey<ConfiguredFeature<?,?>> key,

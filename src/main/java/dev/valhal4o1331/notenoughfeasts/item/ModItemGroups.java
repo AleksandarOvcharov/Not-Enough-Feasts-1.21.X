@@ -1,7 +1,6 @@
 package dev.valhal4o1331.notenoughfeasts.item;
 
 import dev.valhal4o1331.notenoughfeasts.NotEnoughFeasts;
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
