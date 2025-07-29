@@ -20,7 +20,7 @@ public class OnionBushBlock extends SweetBerryBushBlock {
     }
 
     @Override
-    public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
+    public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state, boolean b) {
         return new ItemStack(ModItems.ONION_ROOT);
     }
 
